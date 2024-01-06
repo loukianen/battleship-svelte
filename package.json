@@ -2,7 +2,8 @@
 	"name": "battleship-svelte",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "vite dev",
+		"dev": "vite dev -- --host",
+		"ddev": "docker-compose up -d --build",
 		"build": "vite build",
 		"preview": "vite preview",
 		"test": "npm run test:integration && npm run test:unit",
