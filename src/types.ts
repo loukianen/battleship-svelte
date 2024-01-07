@@ -1,4 +1,3 @@
-import store from './store/store';
 import {
   CellType,
   PlayerType,
@@ -7,12 +6,10 @@ import {
   ShipOrientation,
   ShootResult,
   FieldName
-} from './const';
-import { FieldTextKey } from './locales/types';
+} from './consts';
+import type { FieldTextKey } from './lib/i18n/locales/types';
 
 export type ActivePlayerState = PlayerIndex | 'undefined';
-
-export type AppDispatch = typeof store.dispatch;
 
 export type BattleFieldCell = Omit<Cell, 'defaultType' | 'value'>;
 

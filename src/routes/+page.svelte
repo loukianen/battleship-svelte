@@ -19,6 +19,7 @@
 
 <style lang="sass">
   @import "../node_modules/bootstrap/scss/bootstrap"
+
   @media (min-width: 992px)
     .container
       max-width: 960px

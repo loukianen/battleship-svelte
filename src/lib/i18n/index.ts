@@ -3,10 +3,10 @@ import { init, register } from 'svelte-i18n';
 
 const defaultLocale = 'en';
 
-register('en', () => import('./locales/en.json'));
-register('de', () => import('./locales/ru.json'));
+register('en', () => import('./locales/en.js'));
+register('ru', () => import('./locales/ru.js'));
 
 init({
-	fallbackLocale: defaultLocale,
-	initialLocale: browser ? window.navigator.language : defaultLocale,
+  fallbackLocale: defaultLocale,
+  initialLocale: browser ? window.navigator.language : defaultLocale,
 });
